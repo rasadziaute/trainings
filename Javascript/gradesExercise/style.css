@@ -1,0 +1,26 @@
+form {
+  padding-bottom: 10%;
+}
+
+table {
+  border-color: grey;
+  border-style: solid;
+  width: 50%;
+  text-align: left;
+  padding-left: 2%;
+}
+table th {
+  font-weight: lighter;
+}
+table tr.space > th {
+  padding-bottom: 5%;
+}
+table tr.name > th {
+  padding-top: 20%;
+}
+table caption {
+  text-align: left;
+  padding-left: 5%;
+}
+
+/*# sourceMappingURL=style.css.map */

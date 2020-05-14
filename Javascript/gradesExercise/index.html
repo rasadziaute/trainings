@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <script src="grades.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+    <body>
+        <main>
+            <form>
+                <label for="studentId">Student Id:</label><br>
+                <input type="number" id="studentId"><br>
+                <label for="studentName">Student Name:</label><br>
+                <input type="text" id="studentName"><br>
+                <label for="score1">Score 1:</label><br>
+                <input type="number" id="score1" min="0" max="10"><br>
+                <label for="score2">Score 2:</label><br>
+                <input type="number" id="score2" min="0" max="10"><br>
+                <label for="score3">Score 3:</label><br>
+                <input type="number" id="score3" min="0" max="10"><br>
+                <br>
+                <button type="button" id="submit" onclick="updateTable()">Submit</button>
+            </form>
+
+            <table>
+                <caption id="nameTable">Name</caption>
+                <thead>
+                    <tr></tr>
+                    <tr class="space">
+                        <th> Student Id:</th>
+                        <td id="idTable"></td>
+                    </tr>
+                    <tr>
+                        <th>Score 1:</th>
+                        <td id="score1Table"></td>
+                    </tr>
+                    <tr>
+                        <th>Score 2:</th>
+                        <td id="score2Table"></td>
+                    </tr>
+                    <tr class="space">
+                        <th>Score 3:</th>
+                        <td id="score3Table"></td>
+                    </tr>
+                    <tr>
+                        <th>Total Score:</th>
+                        <td id="totalScore"></td>
+                    </tr>
+                    <tr class="space">
+                        <th>Percentage Score:</th>
+                        <td id="percentageScore"></td>
+                    </tr>
+                    <tr>
+                        <th id="verdict"></th>
+                    </tr>
+
+                </thead>
+            </table>
+        </main>
+    </body>
+</html>

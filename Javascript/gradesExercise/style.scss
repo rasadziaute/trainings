@@ -1,0 +1,32 @@
+form {
+    padding-bottom: 10%;
+}
+
+table {
+    border-color: grey;
+    border-style: solid;
+    width: 50%;
+    text-align: left;
+    padding-left: 2%;
+
+    th {
+        font-weight: lighter;
+
+    }
+
+    tr.space>th{
+        padding-bottom: 5%;
+    }
+
+    tr.name>th{
+        padding-top: 20%;
+    }
+
+    caption{
+        text-align: left;
+        padding-left: 5%;
+    }
+
+}
+
+
