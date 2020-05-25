@@ -1,0 +1,14 @@
+
+<p>Write a sentence:</p>
+<input [(ngModel)]="sentence">
+<p>Your sentence has number of letters: {{ sentence | getNumberOfLetters }}</p>
+<br>
+<p>Calculate exponential value</p>
+<label for="value">Number: </label>
+<input [(ngModel)]="value" type="number" id="value">
+<label for="power">Power: </label>
+<input [(ngModel)]="power" type="number" id="power" placeholder="2">
+<p>Result: {{ !value ? 0: value | getExponentialValue: power}}</p>
+
+
+
