@@ -1,0 +1,17 @@
+  <h2>Search to implement Optional Route Parameters</h2>
+  
+  <form>
+    <div class="form-group">
+      <label for="name">Employee Name</label>
+      <input type="text" class="form-control" id="name" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" placeholder="Employee Name">
+      <small>Optional search criteria</small>
+    </div>
+    <div class="form-group">
+        <label for="location">Employee Location</label>
+        <input type="text" class="form-control" id="location" [(ngModel)]="location" [ngModelOptions]="{standalone: true}" placeholder="Employee Location">
+        <small>Optional search criteria</small>
+      </div>
+    <button type="submit" class="btn btn-primary"
+    [routerLink]="['/employees']" [queryParams]="{name: name, location: location}">Search</button>
+  </form>
+
