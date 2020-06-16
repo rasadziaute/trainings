@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TechnologyRoutingModule } from './technology-routing.module';
-import { ProductsComponent } from './products/products.component';
+import { TechnologyComponent } from './technology.component';
+
 
 
 
 @NgModule({
-  declarations: [ProductsComponent],
+  declarations: [TechnologyComponent],
   imports: [
     CommonModule,
     TechnologyRoutingModule

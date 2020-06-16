@@ -2,14 +2,13 @@
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link"
-        [routerLink]="['/products']" routerLinkActive="active">Products</a>
+        [routerLink]="['products']" routerLinkActive="active">Products</a>
       </li>
       <li class="nav-item">
         <a class="nav-link"
-        [routerLink]="['/levels']">Software Engineering Levels</a>
+        [routerLink]="['levels']">Software Engineering Levels</a>
       </li>
     </ul>
     </nav>
 
-    <button [routerLink]="['/products']" routerLinkActive="active">Products</button>
     <router-outlet></router-outlet>
