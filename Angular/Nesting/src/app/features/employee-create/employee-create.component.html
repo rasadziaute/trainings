@@ -1,0 +1,22 @@
+<h4>Add new Employee</h4>
+
+<form class="form" #createForm="ngForm">
+    <div class="form-group">
+        <label for="id">Employee Id</label>
+        <input type="number" class="form-control" id="id" placeholder="Employee Id" [(ngModel)]="employee.id" [ngModelOptions]="{standalone: true}">
+      </div>
+    <div class="form-group">
+      <label for="name">Employee Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Employee Name" [(ngModel)]="employee.name" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group">
+        <label for="project">Project Id</label>
+        <input type="number" class="form-control" id="project" placeholder="Project Id" [(ngModel)]="employee.projectId" [ngModelOptions]="{standalone: true}">
+      </div>
+    <div class="form-group">
+        <label for="rating">Rating</label>
+        <input type="number" class="form-control" id="rating" placeholder="Rating" [(ngModel)]="employee.angularProficiency" [ngModelOptions]="{standalone: true}">
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="AddEmployeeDetails()">Add</button>
+    <button type="button" class="btn btn-primary" (click)="Reset(createForm)">Reset</button>
+  </form>

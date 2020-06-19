@@ -1,0 +1,38 @@
+[
+    {
+    "id":1,
+    "name":"Ayesha",
+    "projectId":100,
+    "angularProficiency":4.0
+    },
+    {
+        "id":2,
+        "name":"Lukas",
+        "projectId":101,
+        "angularProficiency": 4.0
+    },
+    {
+        "id":3,
+        "name":"Tusani",
+        "projectId":102,
+        "angularProficiency": 3.5
+    },
+    {
+        "id":4,
+        "name":"Deeksha",
+        "projectId":103,
+        "angularProficiency": 3.5
+    },
+    {
+        "id":5,
+        "name":"Vaida",
+        "projectId":101,
+        "angularProficiency": 5.0
+    },
+    {
+        "id":6,
+        "name":"Tom",
+        "projectId":102,
+        "angularProficiency": 2.5
+    }
+]
