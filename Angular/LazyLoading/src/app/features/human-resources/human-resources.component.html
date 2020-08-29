@@ -1,1 +1,19 @@
-<p>human-resources works!</p>
+<div class="table-responsive">
+    <table class="table mb-0">
+      <thead>
+        <tr>
+          <th>Employee name</th>
+          <th>Location</th>
+          <th>Department</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{ employee.name }}</td>
+          <td>{{ employee.location }}</td>
+          <td>{{ employee.department }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

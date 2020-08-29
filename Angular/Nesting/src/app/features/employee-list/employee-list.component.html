@@ -17,9 +17,15 @@
           <td>{{ employee.id }}</td>
           <td>{{ employee.name }}</td>
           <td>{{ employee.projectId }}</td>
-          <td><app-rating [rating]="employee.angularProficiency"></app-rating></td>
+          <td>
+            <a href="#" (click)="GetAngularProficiency(employee.angularProficiency)">
+              <app-rating [rating]="employee.angularProficiency"></app-rating>
+            </a>
+          </td>
         </tr>
       </tbody>
     </table>
   </div>
 <app-employee-create (newEmployeeRecord)="CreateEmployee($event)"></app-employee-create>
+
+<app-stored-records [employees]="newEmployees"></app-stored-records>

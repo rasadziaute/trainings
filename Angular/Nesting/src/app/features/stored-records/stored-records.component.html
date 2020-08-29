@@ -1,1 +1,28 @@
-<p>stored-records works!</p>
+<br>
+<div *ngIf="employees.length > 0; else no_records">
+<h4>Newly added Employee list </h4>
+<br>
+<div class="table-responsive">
+    <table class="table mb-0">
+      <thead>
+        <tr>
+          <th>Employee Id</th>
+          <th>Employee name</th>
+          <th>Project Id</th>
+          <th>Angular Proficiency</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{ employee.id }}</td>
+          <td>{{ employee.name }}</td>
+          <td>{{ employee.projectId }}</td>
+          <td><app-rating [rating]="employee.angularProficiency"></app-rating></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<ng-template #no_records class="noRecords">No new Employees were added</ng-template>

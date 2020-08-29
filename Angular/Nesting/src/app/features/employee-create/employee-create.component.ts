@@ -26,12 +26,6 @@ export class EmployeeCreateComponent implements OnInit {
     this.newEmployeeRecord.emit(data);
   }
 
-  Reset(createForm: NgForm) {
-
-    createForm.resetForm();
-
-  }
-
   ngOnInit(): void {
   }
 

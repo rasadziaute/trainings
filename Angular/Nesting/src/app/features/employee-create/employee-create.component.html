@@ -17,6 +17,6 @@
         <label for="rating">Rating</label>
         <input type="number" class="form-control" id="rating" placeholder="Rating" [(ngModel)]="employee.angularProficiency" [ngModelOptions]="{standalone: true}">
     </div>
-    <button type="submit" class="btn btn-primary" (click)="AddEmployeeDetails()">Add</button>
-    <button type="button" class="btn btn-primary" (click)="Reset(createForm)">Reset</button>
+    <button type="reset" class="btn btn-primary" (click)="AddEmployeeDetails(); createForm.reset()">Add</button>
+    <button type="reset" class="btn btn-primary" (click)="createForm.reset()">Reset</button>
   </form>

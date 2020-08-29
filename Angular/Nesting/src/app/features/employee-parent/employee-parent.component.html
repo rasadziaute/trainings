@@ -1,0 +1,8 @@
+
+<div *ngIf="angularProficiency > -1; else no_records">
+The proficiency rating of the employee is <app-rating [rating]="angularProficiency"></app-rating>
+</div>
+<br>
+<app-employee-list (angularProficiency)="GetAngularProficiency($event)"></app-employee-list>
+
+<ng-template #no_records class="noRecords"></ng-template>
