@@ -1,0 +1,20 @@
+<div>
+  <h2 #info>Information about cats</h2>
+  <label for="catName">Write your cat name:</label>
+  <input [(ngModel)]="catName" type="text" id="catName">
+  <app-cats catName="{{ catName }}"></app-cats>
+  <br />
+</div>
+<div>
+  <h2>Information about cat names using @ViewChildren</h2>
+  <app-cats catName="{{ catName1 }}"></app-cats>
+  <app-cats catName="{{ catName2 }}"></app-cats>
+  <app-cats catName="{{ catName3 }}"></app-cats>
+</div>
+<div>
+  <app-info>
+    <p>{{ catName1 }}</p>
+    <p>{{ catName2 }}</p>
+    <p>{{ catName3 }}</p>
+  </app-info>
+</div>
