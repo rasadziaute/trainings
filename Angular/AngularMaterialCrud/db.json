@@ -1,0 +1,51 @@
+{
+  "Employee": [
+    {
+      "id": 1,
+      "name": "Mayura",
+      "designation": "Trainer",
+      "department": "Soft Eng",
+      "Gender": "Female",
+      "sales": "Achieved"
+    },
+    {
+      "id": 3,
+      "name": "James",
+      "designation": "Escalation Manager",
+      "department": "Support",
+      "Gender": "Male",
+      "sales": "Achieved"
+    },
+    {
+      "id": 4,
+      "name": "Smitha",
+      "designation": "Data Testing Engineer",
+      "department": "DTS",
+      "Gender": "Female",
+      "sales": "Achieved"
+    },
+    {
+      "id": 5,
+      "name": "Swathi",
+      "designation": "Tech Lead",
+      "department": "Soft Eng",
+      "Gender": "Female",
+      "sales": "Achieved"
+    },
+    {
+      "name": "Amit Sonar",
+      "designation": "Soft Developer",
+      "department": "Technology",
+      "Gender": "Male",
+      "sales": "Achieved",
+      "id": 6
+    },
+    {
+      "name": "m@gmail.com",
+      "designation": "fgfdg",
+      "department": "gfdg",
+      "Gender": "m",
+      "id": 7
+    }
+  ]
+}

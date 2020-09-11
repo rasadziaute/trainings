@@ -1,0 +1,27 @@
+<div class="example-container mat-elevation-z8">
+    <h2>Employees Statistic</h2>
+    <div class="example-loading-shade"
+         *ngIf="isDataLoading">
+      <mat-spinner *ngIf="isDataLoading"></mat-spinner>
+    </div>
+    <div class="button-row">
+      <a mat-flat-button color="primary" [routerLink]="['/employees']"><mat-icon>list</mat-icon></a>
+    </div>
+    <div class="button-row">
+      <mat-button-toggle-group name="status" aria-label="status"
+       [(ngModel)]="label" (ngModelChange)="changeStatus()">
+        <mat-button-toggle value="Achieved">Achieved</mat-button-toggle>
+        <mat-button-toggle value="NotAchieved">Not Achieved</mat-button-toggle>
+           </mat-button-toggle-group>
+    </div>
+    <div class="chart-wrapper">
+      <canvas baseChart
+        [datasets]="barChartData"
+        [labels]="barChartLables"
+        [options]="barChartOptions"
+        
+        [legend]="barChartLegend"
+        [chartType]="barChartType">
+      </canvas>
+    </div>
+  </div>
