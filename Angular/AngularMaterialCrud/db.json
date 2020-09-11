@@ -26,10 +26,10 @@
     },
     {
       "id": 5,
-      "name": "Swathi",
-      "designation": "Tech Lead",
+      "name": "Swathi2",
       "department": "Soft Eng",
       "Gender": "Female",
+      "designation": "Tech Lead",
       "sales": "Achieved"
     },
     {
@@ -37,7 +37,7 @@
       "designation": "Soft Developer",
       "department": "Technology",
       "Gender": "Male",
-      "sales": "Achieved",
+      "sales": "NotAchieved",
       "id": 6
     },
     {

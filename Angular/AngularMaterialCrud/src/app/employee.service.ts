@@ -1,20 +1,21 @@
-import { Injectable } from '@angular/core';
-import { HttpHeaders, HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { Observable, of, throwError } from 'rxjs';
-import { Employee } from './employee';
-import { catchError } from 'rxjs/operators';
+import { Injectable } from "@angular/core";
+import {
+  HttpHeaders,
+  HttpClient,
+  HttpErrorResponse,
+} from "@angular/common/http";
+import { Observable, of, throwError } from "rxjs";
+import { Employee } from "./employee";
+import { catchError, map } from "rxjs/operators";
 const httpOptions = {
-  header: new HttpHeaders({ 'Content-Type': 'application/json' })
+  header: new HttpHeaders({ "Content-Type": "application/json" }),
 };
 
-const baseUrl = 'http://localhost:3000/Employee';
+const baseUrl = "http://localhost:3000/Employee";
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
-
 export class EmployeeService {
-
-
   // private handleError<T>(operation = 'operation', result?: T) {
   //   return (error: any): Observable<T> => {
   //     console.log(error);
@@ -22,19 +23,24 @@ export class EmployeeService {
   //   };
   // }
 
-
   private handleError(errorResonse: HttpErrorResponse) {
     if (errorResonse.error instanceof ErrorEvent) {
-       console.log('Client Side Error', errorResonse.error);
+      console.log("Client Side Error", errorResonse.error);
     } else {
-      console.log('Server Side Error', errorResonse.error);
+      console.log("Server Side Error", errorResonse.error);
     }
-    return throwError('their is a problem in your code');
-
+    return throwError("their is a problem in your code");
   }
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
   getEmployees(): Observable<Employee[]> {
-    return this.http.get<Employee[]>(baseUrl).pipe(catchError(this.handleError));
+    return this.http
+      .get<Employee[]>(baseUrl)
+      .pipe(catchError(this.handleError));
+  }
+  getEmployeesByLabel(label: string): Observable<Employee[]> {
+    return this.http
+      .get<Employee[]>(baseUrl)
+      .pipe(map((data) => data.filter((x) => x.sales === label)));
   }
 
   getEmployeeById(id: number): Observable<Employee> {
@@ -44,15 +50,14 @@ export class EmployeeService {
   addEmployee(emp): Observable<Employee> {
     return this.http.post<Employee>(baseUrl, emp);
   }
-  deleteEmployee(id): Observable<Employee>{
+  deleteEmployee(id): Observable<Employee> {
     const url = `${baseUrl}/${id}`;
-    return this.http.delete<Employee>(url)
+    return this.http.delete<Employee>(url).pipe(catchError(this.handleError));
+  }
+  editEmployee(employee: Employee): Observable<Employee> {
+    const url = `${baseUrl}/${employee.id}`;
+    return this.http
+      .put<Employee>(url, employee)
       .pipe(catchError(this.handleError));
- }
-
+  }
 }
-
-
-
-
-

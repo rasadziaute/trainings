@@ -1,0 +1,50 @@
+<div class="content-container">
+  <h4>Edit Employee</h4>
+
+  <form [formGroup]="employeeForm" (ngSubmit)="onSave(employeeForm.value)">
+    <mat-form-field class="half-width">
+      <input matInput placeholder="Name" formControlName="name" required />
+      <mat-error *ngIf="employeeForm.controls.name.hasError('required')"
+        >Required value</mat-error
+      >
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Department"
+        formControlName="department"
+        required
+      />
+      <mat-error *ngIf="employeeForm.controls.department.hasError('required')"
+        >Required value</mat-error
+      >
+    </mat-form-field>
+
+    <mat-form-field class="half-width">
+      <input matInput placeholder="Gender" formControlName="Gender" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Designation" formControlName="designation" />
+    </mat-form-field>
+
+    <mat-form-field class="half-width">
+      <input matInput placeholder="Sales" formControlName="sales" />
+    </mat-form-field>
+
+    <button
+      mat-stroked-button
+      color="primary"
+      type="submit"
+      [disabled]="!employeeForm.valid"
+    >
+      Save
+    </button>
+    <button
+      mat-stroked-button
+      color="secondary"
+      (click)="router.navigate(['employees'])"
+    >
+      Cancel
+    </button>
+  </form>
+</div>

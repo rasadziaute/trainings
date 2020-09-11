@@ -14,6 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { EmployeeChartDataComponent } from './employee-chart-data/employee-chart-data.component';
 import { ChartsModule } from 'ng2-charts';
 import { FormsModule } from '@angular/forms';
+import { EmployeeEditComponent } from './employee/employee-edit/employee-edit.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     EmployeeListComponent,
     AddEmployeeComponent,
     EmployeeDetailsComponent,
-    EmployeeChartDataComponent
+    EmployeeChartDataComponent,
+    EmployeeEditComponent
   ],
   imports: [
     BrowserModule,

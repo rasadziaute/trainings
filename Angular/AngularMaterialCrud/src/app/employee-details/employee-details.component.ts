@@ -49,8 +49,4 @@ export class EmployeeDetailsComponent implements OnInit {
       }
     );
   }
-
-  editEmployee(id) {
-    this.isDataLoading = true;
-  }
 }
