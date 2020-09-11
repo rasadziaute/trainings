@@ -1,0 +1,45 @@
+<div>
+  <h2>Add Url Information</h2>
+</div>
+<div>
+  <form [formGroup]="formGroup">
+    <mat-form-field>
+      <input matInput placeholder=" ID" formControlName="id" required />
+      <mat-error *ngIf="formGroup.controls.id.hasError('required')"> Please enter value for Id </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="From" formControlName="from" required />
+      <mat-error *ngIf="formGroup.controls.from.hasError('required')"> Please enter value </mat-error>
+      <mat-error *ngIf="formGroup.controls.from.hasError('maxlength')">' Exceeding max length </mat-error>
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+      <input matInput placeholder="To" formControlName="to" required />
+      <mat-error *ngIf="formGroup.controls.to.hasError('required')"> Please enter value </mat-error>
+      <mat-error *ngIf="formGroup.controls.to.hasError('maxlength')">' Exceeding max length </mat-error>
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="Choose a date" formControlName="dateCreated" />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker> </mat-form-field
+    ><br />
+    <mat-form-field>
+      <input matInput placeholder="permanentLink" formControlName="permanentLink" />
+    </mat-form-field>
+  </form>
+</div>
+<div>
+  <button
+    mat-raised-button
+    type="reset"
+    color="primary"
+    class="Update-btn"
+    [disabled]="!formGroup.valid"
+    (click)="OnSubmit()"
+  >
+    Save
+  </button>
+  &nbsp;
+  <button mat-raised-button type="button" class="Discard-btn" (click)="closeDialog()">Cancel</button>
+</div>

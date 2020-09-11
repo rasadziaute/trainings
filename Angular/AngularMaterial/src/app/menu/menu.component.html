@@ -1,0 +1,17 @@
+<mat-sidenav-container color="primary" class="mat-elevation-z8">
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+    <a mat-button routerLink="">Home</a>
+    <a mat-button routerLink="register">Register</a>
+    <a mat-button routerLink="url">URL</a>
+    <a mat-button routerLink="about">About</a>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <p>
+      <button mat-button (click)="sidenav.toggle()">
+        <span> <mat-icon>eco</mat-icon>ToolBar Navigation </span>
+      </button>
+    </p>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<router-outlet></router-outlet>
