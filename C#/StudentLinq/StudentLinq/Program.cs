@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Xml.Linq;
 
 namespace StudentLinq
 {
@@ -38,6 +40,14 @@ namespace StudentLinq
             }
 
             Console.ReadLine();
+
+            Console.WriteLine("Implementing LINQ to XML");
+            Console.WriteLine("Paste in location and document name where to create an xml document");
+            var location = Console.ReadLine();
+
+            StudentLinqToXml.CreateXML(location);
+
+           
         }
     }
 }
