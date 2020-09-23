@@ -1,0 +1,11 @@
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\ConstructorAndInheritance\ConstructorAndInheritance\bin\Debug\netcoreapp2.1\ConstructorAndInheritance.deps.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\ConstructorAndInheritance\ConstructorAndInheritance\bin\Debug\netcoreapp2.1\ConstructorAndInheritance.runtimeconfig.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\ConstructorAndInheritance\ConstructorAndInheritance\bin\Debug\netcoreapp2.1\ConstructorAndInheritance.runtimeconfig.dev.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\ConstructorAndInheritance\ConstructorAndInheritance\bin\Debug\netcoreapp2.1\ConstructorAndInheritance.dll
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\ConstructorAndInheritance\ConstructorAndInheritance\bin\Debug\netcoreapp2.1\ConstructorAndInheritance.pdb
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\ConstructorAndInheritance\ConstructorAndInheritance\obj\Debug\netcoreapp2.1\ConstructorAndInheritance.csprojAssemblyReference.cache
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\ConstructorAndInheritance\ConstructorAndInheritance\obj\Debug\netcoreapp2.1\ConstructorAndInheritance.csproj.CoreCompileInputs.cache
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\ConstructorAndInheritance\ConstructorAndInheritance\obj\Debug\netcoreapp2.1\ConstructorAndInheritance.AssemblyInfoInputs.cache
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\ConstructorAndInheritance\ConstructorAndInheritance\obj\Debug\netcoreapp2.1\ConstructorAndInheritance.AssemblyInfo.cs
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\ConstructorAndInheritance\ConstructorAndInheritance\obj\Debug\netcoreapp2.1\ConstructorAndInheritance.dll
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\ConstructorAndInheritance\ConstructorAndInheritance\obj\Debug\netcoreapp2.1\ConstructorAndInheritance.pdb

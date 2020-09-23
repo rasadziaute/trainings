@@ -1,0 +1,12 @@
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\SortedDataStructure\SortedDataStructure\SortedDataStructure\bin\Debug\netcoreapp2.1\SortedDataStructure.deps.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\SortedDataStructure\SortedDataStructure\SortedDataStructure\bin\Debug\netcoreapp2.1\SortedDataStructure.runtimeconfig.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\SortedDataStructure\SortedDataStructure\SortedDataStructure\bin\Debug\netcoreapp2.1\SortedDataStructure.runtimeconfig.dev.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\SortedDataStructure\SortedDataStructure\SortedDataStructure\bin\Debug\netcoreapp2.1\SortedDataStructure.dll
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\SortedDataStructure\SortedDataStructure\SortedDataStructure\bin\Debug\netcoreapp2.1\SortedDataStructure.pdb
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\SortedDataStructure\SortedDataStructure\SortedDataStructure\obj\Debug\netcoreapp2.1\SortedDataStructure.csprojAssemblyReference.cache
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\SortedDataStructure\SortedDataStructure\SortedDataStructure\obj\Debug\netcoreapp2.1\SortedDataStructure.csproj.CoreCompileInputs.cache
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\SortedDataStructure\SortedDataStructure\SortedDataStructure\obj\Debug\netcoreapp2.1\SortedDataStructure.AssemblyInfoInputs.cache
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\SortedDataStructure\SortedDataStructure\SortedDataStructure\obj\Debug\netcoreapp2.1\SortedDataStructure.AssemblyInfo.cs
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\SortedDataStructure\SortedDataStructure\SortedDataStructure\obj\Debug\netcoreapp2.1\SortedDataStructure.dll
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\SortedDataStructure\SortedDataStructure\SortedDataStructure\obj\Debug\netcoreapp2.1\SortedDataStructure.pdb
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\SortedDataStructure\SortedDataStructure\SortedDataStructure\obj\Debug\netcoreapp2.1\SortedDataStructure.genruntimeconfig.cache

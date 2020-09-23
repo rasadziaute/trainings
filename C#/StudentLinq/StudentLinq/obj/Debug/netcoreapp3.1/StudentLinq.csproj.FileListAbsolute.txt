@@ -1,0 +1,13 @@
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\StudentLinq\StudentLinq\bin\Debug\netcoreapp3.1\StudentLinq.exe
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\StudentLinq\StudentLinq\bin\Debug\netcoreapp3.1\StudentLinq.deps.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\StudentLinq\StudentLinq\bin\Debug\netcoreapp3.1\StudentLinq.runtimeconfig.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\StudentLinq\StudentLinq\bin\Debug\netcoreapp3.1\StudentLinq.runtimeconfig.dev.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\StudentLinq\StudentLinq\bin\Debug\netcoreapp3.1\StudentLinq.dll
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\StudentLinq\StudentLinq\bin\Debug\netcoreapp3.1\StudentLinq.pdb
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\StudentLinq\StudentLinq\obj\Debug\netcoreapp3.1\StudentLinq.csprojAssemblyReference.cache
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\StudentLinq\StudentLinq\obj\Debug\netcoreapp3.1\StudentLinq.AssemblyInfoInputs.cache
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\StudentLinq\StudentLinq\obj\Debug\netcoreapp3.1\StudentLinq.AssemblyInfo.cs
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\StudentLinq\StudentLinq\obj\Debug\netcoreapp3.1\StudentLinq.csproj.CoreCompileInputs.cache
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\StudentLinq\StudentLinq\obj\Debug\netcoreapp3.1\StudentLinq.dll
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\StudentLinq\StudentLinq\obj\Debug\netcoreapp3.1\StudentLinq.pdb
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\StudentLinq\StudentLinq\obj\Debug\netcoreapp3.1\StudentLinq.genruntimeconfig.cache
