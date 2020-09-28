@@ -1,0 +1,11 @@
+﻿
+@model CandyOnlineShopping.Models.ViewModels.HomeViewModel
+
+<partial name="_Slider" />
+
+<div class="row">
+    @foreach (var candy in Model.CandyOnSale)
+    {
+        <partial name="_Candy" model="candy" />
+    }
+</div>
