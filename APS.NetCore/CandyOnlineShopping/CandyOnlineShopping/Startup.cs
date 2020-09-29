@@ -18,6 +18,7 @@ using Microsoft.Extensions.Configuration;
 using CandyOnlineShopping.Migrations;
 using CandyOnlineShopping.Repositories.Interfaces;
 using CandyOnlineShopping.Repositories;
+using CandyOnlineShopping.Models.Entity;
 
 namespace CandyOnlineShopping
 {
@@ -39,13 +40,14 @@ namespace CandyOnlineShopping
             services.AddScoped<ICandyRepository, CandyRepository>();
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<ICandyService, CandyService>();
-            services.AddScoped<IShoppingCartRepository, ShoppingCartRepository>();
             services.AddScoped<IShoppingCartItemRepository, ShoppingCartItemRepository>();
-            services.AddScoped<ShoppngCart>();
-
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddHttpContextAccessor();
+
             services.AddSession();
-            //services.AddScoped(sc => ShoppngCart.)
+            services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

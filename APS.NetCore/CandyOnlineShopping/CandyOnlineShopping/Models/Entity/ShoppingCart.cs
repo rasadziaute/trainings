@@ -13,17 +13,16 @@ namespace CandyOnlineShopping.Models.Entity
     public class ShoppingCart
     {
         private readonly IShoppingCartItemRepository _shoppingCartItemRepository;
-        private readonly IShoppingCartRepository _shoppingCartRepository;
 
-        public ShoppingCart(IShoppingCartItemRepository shoppingCartItemRepository, IShoppingCartRepository shoppingCartRepository)
+        public ShoppingCart(IShoppingCartItemRepository shoppingCartItemRepository)
         {
             _shoppingCartItemRepository = shoppingCartItemRepository;
-            _shoppingCartRepository = shoppingCartRepository;
         }
 
         [Column("ShoppingCartId")]
         public string Id { get; set; }
         public List<ShoppingCartItem> ShoppingCartItems { get; set; }
+
         public void AddToCart(Candy candy, int amount)
         {
             _shoppingCartItemRepository.AddToCart(candy, amount, Id);
@@ -31,22 +30,30 @@ namespace CandyOnlineShopping.Models.Entity
 
         public void ClearCart()
         {
-            throw new NotImplementedException();
+            _shoppingCartItemRepository.ClearCart(Id);
         }
 
-        public ShoppingCart GetCart(IServiceProvider serviceProvider)
+        public static ShoppingCart GetCart(IServiceProvider services)
         {
-            return _shoppingCartRepository.Create(serviceProvider);
+            ISession session = services.GetRequiredService<IHttpContextAccessor>()?
+                .HttpContext.Session;
+
+            var context = services.GetService<IShoppingCartItemRepository>();
+            string shoppingCartId = session.GetString("ShoppingCartId") ?? Guid.NewGuid().ToString();
+
+            session.SetString("ShoppingCartId", shoppingCartId);
+
+            return new ShoppingCart(context) { Id = shoppingCartId };
         }
 
         public List<ShoppingCartItem> GetShoppingCartItems()
         {
-            throw new NotImplementedException();
+            return _shoppingCartItemRepository.GetShoppingCartItems(Id);
         }
 
         public decimal GetShoppingCartTotal()
         {
-            throw new NotImplementedException();
+            return _shoppingCartItemRepository.GetShoppingCartTotal(Id);
         }
 
         public int RemoveFromCart(Candy candy)

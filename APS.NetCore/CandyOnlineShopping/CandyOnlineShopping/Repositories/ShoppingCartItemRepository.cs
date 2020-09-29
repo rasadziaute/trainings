@@ -2,6 +2,7 @@
 using CandyOnlineShopping.Models.Entity;
 using CandyOnlineShopping.Repositories.Interfaces;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -41,17 +42,21 @@ namespace CandyOnlineShopping.Repositories
 
         public void ClearCart(string shoppingCartId)
         {
-            throw new NotImplementedException();
+            var shoppingCartItems = _appDbContext.ShoppingCartItem.Where(c => c.ShoppingCartId == shoppingCartId);
+
+            _appDbContext.ShoppingCartItem.RemoveRange(shoppingCartItems);
+            _appDbContext.SaveChanges();
         }
 
         public List<ShoppingCartItem> GetShoppingCartItems(string shoppingCartId)
         {
-            throw new NotImplementedException();
+            return _appDbContext.ShoppingCartItem.Where(c => c.ShoppingCartId == shoppingCartId).Include(s => s.Candy).ToList();
         }
 
         public decimal GetShoppingCartTotal(string shoppingCartId)
         {
-            throw new NotImplementedException();
+            var total = _appDbContext.ShoppingCartItem.Where(c => c.ShoppingCartId == shoppingCartId).Select(c => c.Candy.Price * c.Amount).Sum();
+            return total;
         }
 
         public int RemoveFromCart(Candy candy, string shoppingCartId)
