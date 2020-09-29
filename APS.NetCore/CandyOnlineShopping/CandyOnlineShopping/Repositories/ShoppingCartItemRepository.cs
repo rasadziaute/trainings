@@ -71,11 +71,12 @@ namespace CandyOnlineShopping.Repositories
                     shoppingCartItem.Amount--;
                     localAmount = shoppingCartItem.Amount;
                 }
+                else
+                {
+                    _appDbContext.ShoppingCartItem.Remove(shoppingCartItem);
+                }
             }
-            else
-            {
-                _appDbContext.ShoppingCartItem.Remove(shoppingCartItem);
-            }
+            
             _appDbContext.SaveChanges();
 
             return localAmount;
