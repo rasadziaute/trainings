@@ -2,6 +2,7 @@
 using Bank.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 
@@ -9,16 +10,21 @@ namespace Bank.Domain.Entities
 {
     public class Account : IAccount
     {
-
-        public Guid Id { get; set; } = Guid.NewGuid();
+        [Column("AccountId")]
+        public Guid Id { get; set; }
         public double Balance { get; set; }
         public AccountType Type { get; set; }
 
-        public Account(double balance, AccountType type, out Guid id)
+        public Account()
         {
-            id = Id;
+
+        }
+
+        public Account(double balance, AccountType type)
+        {
             Balance = balance;
             Type = type;
+            Id = Guid.NewGuid();
         }
 
 

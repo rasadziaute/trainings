@@ -7,11 +7,7 @@ namespace Bank.Repositories.Interfaces
 {
     public interface IAccountRepository
     {
-        Account GetById(Guid id);
-        List<Account> GetAll();
-
-        //Account Get(Guid id);
-        //List<Account> Get();
+        Account Get(Guid id);
         void CreateAccount(Account account);
         void Withdraw(Account account, double amount);
         void Deposit(Account account, double amount);

@@ -1,4 +1,6 @@
 ﻿using Bank.Domain.Entities;
+using Bank.Domain.Enums;
+using Bank.Domain.Exceptions;
 using Bank.Repositories.Interfaces;
 using Bank.Services.Interfaces;
 using System;
@@ -12,7 +14,9 @@ namespace Bank.Services
     {
         private readonly ICustomerRepository _customerRepository;
         private readonly IAccountRepository _accountRepository;
-        public Guid id;
+
+        private double _minimalBalance = 100000;
+        private double _dailyWithdraw = 20000;
 
         public CustomerService(ICustomerRepository customerRepository, IAccountRepository accountRepository)
         {
@@ -20,37 +24,40 @@ namespace Bank.Services
             _accountRepository = accountRepository;
         }
 
-        public void CreateCustomer(string name, DateOfBirth dateOfBirth, out Guid id)
+        public Customer CreateCustomer(string firstName, string lastName, string email, string userName, string password, DateTime dateOfBirth)
         {
-            _customerRepository.CreateCustomer(new Customer(name, dateOfBirth, Enumerable.Empty<Account>(), out id));
-        }
-
-        public Customer GetById(Guid id)
-        {
-            return _customerRepository.GetById(id);
-        }
-
-        public List<Customer> GetAll()
-        {
-            return _customerRepository.GetAll();
-        }
-
-        public Customer GetCustomerAccounts(Guid id)
-        {
-            var customer = _customerRepository.GetById(id);
-            var customerAccounts = _customerRepository.GetCustomerAccounts(id);
-            foreach (var customerAccount in customerAccounts)
-            {
-                var account = _accountRepository.GetById(customerAccount.AccountId);
-                customer.Accounts.Add(account);
-            }
-
+            var customer = new Customer(firstName, lastName, email, userName, password, dateOfBirth);
+            _customerRepository.CreateCustomer(customer);
             return customer;
         }
 
-        public void CreateCustomerAccount(Guid customerId, Guid accountId)
+        public Account CreateAccount(double balance, AccountType type, Guid customerId)
         {
-            _customerRepository.CreateCustomerAccount(new CustomerAccount(customerId, accountId));
+            if (!(type != AccountType.Current || balance > _minimalBalance))
+            {
+                throw new WithdrawDepositException($"Minimal balance is {_minimalBalance}");
+            }
+            var account = new Account(balance, type);
+            _customerRepository.CreateAccount(account, customerId);
+            return account;
+        }
+
+        public void Deposit(Account account, double amount)
+        {
+            _accountRepository.Deposit(account, amount);
+        }
+
+        public void Withdraw(Account account, double amount)
+        {
+            if (account.Balance < amount)
+            {
+                throw new WithdrawDepositException($"You don't have enough in your account to withdraw {amount}");
+            }
+            if (!(account.Type != AccountType.Current || amount < _dailyWithdraw))
+            {
+                throw new WithdrawDepositException($"Maximum daily withdraw is {_dailyWithdraw}");
+            }
+            _accountRepository.Withdraw(account, amount);
         }
 
     }

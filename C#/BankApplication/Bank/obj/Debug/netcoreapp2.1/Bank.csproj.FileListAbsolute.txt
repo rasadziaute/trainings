@@ -9,3 +9,15 @@ C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\BankApplication
 C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\BankApplication\Bank\obj\Debug\netcoreapp2.1\Bank.AssemblyInfo.cs
 C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\BankApplication\Bank\obj\Debug\netcoreapp2.1\Bank.dll
 C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\BankApplication\Bank\obj\Debug\netcoreapp2.1\Bank.pdb
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\BankApplication - Copy\Bank\obj\Debug\netcoreapp2.1\Bank.csprojAssemblyReference.cache
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\BankApplication - Copy\Bank\obj\Debug\netcoreapp2.1\Bank.csproj.CoreCompileInputs.cache
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\BankApplication - Copy\Bank\obj\Debug\netcoreapp2.1\Bank.AssemblyInfoInputs.cache
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\BankApplication - Copy\Bank\obj\Debug\netcoreapp2.1\Bank.AssemblyInfo.cs
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\BankApplication - Copy\Bank\obj\Debug\netcoreapp2.1\Bank.dll
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\BankApplication - Copy\Bank\obj\Debug\netcoreapp2.1\Bank.pdb
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\BankApplication - Copy\Bank\bin\Debug\netcoreapp2.1\Bank.deps.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\BankApplication - Copy\Bank\bin\Debug\netcoreapp2.1\Bank.runtimeconfig.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\BankApplication - Copy\Bank\bin\Debug\netcoreapp2.1\Bank.runtimeconfig.dev.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\BankApplication - Copy\Bank\bin\Debug\netcoreapp2.1\Bank.dll
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\BankApplication - Copy\Bank\bin\Debug\netcoreapp2.1\Bank.pdb
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\BankApplication\Bank\obj\Debug\netcoreapp2.1\Bank.genruntimeconfig.cache

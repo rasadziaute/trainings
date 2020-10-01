@@ -1,7 +1,11 @@
-﻿using Bank.Domain.Entities;
+﻿using Bank.Domain;
+using Bank.Domain.Entities;
 using Bank.Repositories.Interfaces;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -9,32 +13,48 @@ namespace Bank.Repositories
 {
     class CustomerRepository: ICustomerRepository
     {
-        private readonly List<Customer> _customers = new List<Customer>();
-        private readonly List<CustomerAccount> _customerAccounts = new List<CustomerAccount>();
+        private readonly IAccountRepository _accountRepository;
+        private readonly ICustomerAccountRepository _customerAccountRepository;
+        private readonly AppDbContext _appDbContext;
+
+        public CustomerRepository(IAccountRepository accountRepository, ICustomerAccountRepository customerAccountRepository, AppDbContext appDbContext)
+        {
+            _accountRepository = accountRepository;
+            _customerAccountRepository = customerAccountRepository;
+            _appDbContext = appDbContext;
+        }
 
         public void CreateCustomer(Customer customer)
         {
-            _customers.Add(customer);
+            _appDbContext.Customer.Add(customer);
+            _appDbContext.SaveChanges();    
         }
 
-        public List<Customer> GetAll()
+        public void CreateAccount(Account account, Guid id)
         {
-            return _customers;
+            _customerAccountRepository.Create(new CustomerAccount(id, account.Id));
+            _accountRepository.CreateAccount(account);
         }
 
-        public Customer GetById(Guid id)
+        public bool GetCustomerEmail(string email)
         {
-            return GetAll().FirstOrDefault(s => s.Id == id);
+            if (_appDbContext.Customer.FirstOrDefault(s => s.Email == email) != null)
+            {
+                return true;
+            }
+            return false;
         }
 
-        public List<CustomerAccount> GetCustomerAccounts(Guid id)
+        public Customer Get(Guid id)
         {
-            return _customerAccounts.FindAll(s => s.CustomerId == id);
-        }
+            var customer = _appDbContext.Customer.FirstOrDefault(s => s.Id == id);
+            var customerAccounts = _customerAccountRepository.Get(customer.Id);
+            foreach (var account in customerAccounts)
+            {
+                customer.Accounts.Add(_accountRepository.Get(account.AccountId));
+            }
 
-        public void CreateCustomerAccount(CustomerAccount customerAccount)
-        {
-            _customerAccounts.Add(customerAccount);  
+            return customer;
         }
     }
 }

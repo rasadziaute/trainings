@@ -1,6 +1,10 @@
-﻿using Bank.Domain.Interfaces;
+﻿using Bank.Domain.Enums;
+using Bank.Domain.Exceptions;
+using Bank.Domain.Interfaces;
+using Bank.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 
@@ -8,20 +12,32 @@ namespace Bank.Domain.Entities
 {
     public class Customer : ICustomer
     {
-        private readonly List<Account> _accounts = new List<Account>();
+        [Column("CustomerId")]
         public Guid Id { get; set; } = Guid.NewGuid();
-        public string Name { get; set; }
-        public DateOfBirth DateOfBirth { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Email { get; set; }
+        public string UserName { get; set; }
+        public string Password { get; set; }
+        public DateTime DateOfBirth { get; set; }
 
-        public List<Account> Accounts => _accounts.ToList();
 
-        public Customer(string name, DateOfBirth dateOfBirth, IEnumerable<Account> accounts, out Guid id)
+        public List<Account> Accounts { get; set; } = new List<Account>();
+
+
+        public Customer()
         {
-            id = Id;
-            Name = name;
-            DateOfBirth = dateOfBirth;
-            _accounts = accounts.ToList();
+
         }
 
+        public Customer(string firstName, string lastName, string email, string userName, string password, DateTime dateOfBirth)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            Email = email;
+            UserName = userName;
+            Password = password;
+            DateOfBirth = dateOfBirth;
+        }
     }
 }

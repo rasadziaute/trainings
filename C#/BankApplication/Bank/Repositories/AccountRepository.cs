@@ -1,4 +1,5 @@
-﻿using Bank.Domain.Entities;
+﻿using Bank.Domain;
+using Bank.Domain.Entities;
 using Bank.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -9,31 +10,35 @@ namespace Bank.Repositories
 {
     public class AccountRepository : IAccountRepository
     {
-        private readonly List<Account> _accounts = new List<Account>();
+        private readonly AppDbContext _appDbContext;
+        public AccountRepository(AppDbContext appDbContext)
+        {
+            _appDbContext = appDbContext;
+        }
 
         public void CreateAccount(Account account)
         {
-            _accounts.Add(account);
+            _appDbContext.Account.Add(account);
+            _appDbContext.SaveChanges();
         }
 
-        public List<Account> GetAll()
+        public Account Get(Guid id)
         {
-            return _accounts;
-        }
-
-        public Account GetById(Guid id)
-        {
-            return GetAll().FirstOrDefault(s => s.Id == id);
+            return _appDbContext.Account.SingleOrDefault(s => s.Id == id);
         }
 
         public void Deposit(Account account, double amount)
         {
-            account.Balance +=  amount;
+            var customerAccount = Get(account.Id);
+            customerAccount.Balance += amount;
+            _appDbContext.SaveChanges();
         }
 
         public void Withdraw(Account account, double amount)
         {
+            var customerAccount = Get(account.Id);
             account.Balance -= amount;
+            _appDbContext.SaveChanges();
         }
     }
 }

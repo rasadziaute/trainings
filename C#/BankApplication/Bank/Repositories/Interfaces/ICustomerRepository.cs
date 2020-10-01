@@ -8,9 +8,8 @@ namespace Bank.Repositories.Interfaces
     public interface ICustomerRepository
     {
         void CreateCustomer(Customer customer);
-        List<Customer> GetAll();
-        Customer GetById(Guid id);
-        List<CustomerAccount> GetCustomerAccounts(Guid id);
-        void CreateCustomerAccount(CustomerAccount customerAccount);
+        bool GetCustomerEmail(string email);
+        Customer Get(Guid id);
+        void CreateAccount(Account account, Guid id);
     }
 }
