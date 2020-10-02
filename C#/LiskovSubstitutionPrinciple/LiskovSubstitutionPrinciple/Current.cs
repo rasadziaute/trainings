@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace LiskovSubstitutionPrinciple
+{
+    public class Current : Account
+    {
+        private double _maxWithdrawAmount = 1000;
+        public Current(int id, string customerName, double balance) : base()
+        {
+            Id = id;
+            CustomerName = customerName;
+            Balance = balance;
+        }
+        public override string Deposit(double amount)
+        {
+            Balance += amount;
+            return "Deposit was successful";
+        }
+
+        public override string Withdraw(double amount)
+        {
+            if (amount < _maxWithdrawAmount && amount < Balance)
+            {
+                Balance -= amount;
+                return "Withdraw was successful";
+            }
+            else
+            {
+                return $"Amount exceeded max limit {_maxWithdrawAmount} or amount was bigger than balance {Balance}";
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Rasa.Baniulyte\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Rasa.Baniulyte\\.nuget\\packages",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ]
+  }
+}

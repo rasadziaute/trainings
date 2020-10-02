@@ -1,0 +1,13 @@
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\LiskovSubstitutionPrinciple\LiskovSubstitutionPrinciple\bin\Debug\netcoreapp3.1\LiskovSubstitutionPrinciple.exe
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\LiskovSubstitutionPrinciple\LiskovSubstitutionPrinciple\bin\Debug\netcoreapp3.1\LiskovSubstitutionPrinciple.deps.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\LiskovSubstitutionPrinciple\LiskovSubstitutionPrinciple\bin\Debug\netcoreapp3.1\LiskovSubstitutionPrinciple.runtimeconfig.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\LiskovSubstitutionPrinciple\LiskovSubstitutionPrinciple\bin\Debug\netcoreapp3.1\LiskovSubstitutionPrinciple.runtimeconfig.dev.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\LiskovSubstitutionPrinciple\LiskovSubstitutionPrinciple\bin\Debug\netcoreapp3.1\LiskovSubstitutionPrinciple.dll
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\LiskovSubstitutionPrinciple\LiskovSubstitutionPrinciple\bin\Debug\netcoreapp3.1\LiskovSubstitutionPrinciple.pdb
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\LiskovSubstitutionPrinciple\LiskovSubstitutionPrinciple\obj\Debug\netcoreapp3.1\LiskovSubstitutionPrinciple.csprojAssemblyReference.cache
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\LiskovSubstitutionPrinciple\LiskovSubstitutionPrinciple\obj\Debug\netcoreapp3.1\LiskovSubstitutionPrinciple.AssemblyInfoInputs.cache
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\LiskovSubstitutionPrinciple\LiskovSubstitutionPrinciple\obj\Debug\netcoreapp3.1\LiskovSubstitutionPrinciple.AssemblyInfo.cs
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\LiskovSubstitutionPrinciple\LiskovSubstitutionPrinciple\obj\Debug\netcoreapp3.1\LiskovSubstitutionPrinciple.csproj.CoreCompileInputs.cache
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\LiskovSubstitutionPrinciple\LiskovSubstitutionPrinciple\obj\Debug\netcoreapp3.1\LiskovSubstitutionPrinciple.dll
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\LiskovSubstitutionPrinciple\LiskovSubstitutionPrinciple\obj\Debug\netcoreapp3.1\LiskovSubstitutionPrinciple.pdb
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\LiskovSubstitutionPrinciple\LiskovSubstitutionPrinciple\obj\Debug\netcoreapp3.1\LiskovSubstitutionPrinciple.genruntimeconfig.cache
