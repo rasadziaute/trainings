@@ -1,0 +1,12 @@
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\DesignPatterns\bin\Debug\netcoreapp3.1\Singleton.exe
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\DesignPatterns\bin\Debug\netcoreapp3.1\Singleton.deps.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\DesignPatterns\bin\Debug\netcoreapp3.1\Singleton.runtimeconfig.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\DesignPatterns\bin\Debug\netcoreapp3.1\Singleton.runtimeconfig.dev.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\DesignPatterns\bin\Debug\netcoreapp3.1\Singleton.dll
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\DesignPatterns\bin\Debug\netcoreapp3.1\Singleton.pdb
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\DesignPatterns\obj\Debug\netcoreapp3.1\Singleton.AssemblyInfoInputs.cache
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\DesignPatterns\obj\Debug\netcoreapp3.1\Singleton.AssemblyInfo.cs
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\DesignPatterns\obj\Debug\netcoreapp3.1\Singleton.csproj.CoreCompileInputs.cache
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\DesignPatterns\obj\Debug\netcoreapp3.1\Singleton.dll
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\DesignPatterns\obj\Debug\netcoreapp3.1\Singleton.pdb
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\DesignPatterns\obj\Debug\netcoreapp3.1\Singleton.genruntimeconfig.cache

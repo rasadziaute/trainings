@@ -1,0 +1,13 @@
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\ObserverPattern\bin\Debug\netcoreapp3.1\ObserverPattern.exe
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\ObserverPattern\bin\Debug\netcoreapp3.1\ObserverPattern.deps.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\ObserverPattern\bin\Debug\netcoreapp3.1\ObserverPattern.runtimeconfig.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\ObserverPattern\bin\Debug\netcoreapp3.1\ObserverPattern.runtimeconfig.dev.json
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\ObserverPattern\bin\Debug\netcoreapp3.1\ObserverPattern.dll
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\ObserverPattern\bin\Debug\netcoreapp3.1\ObserverPattern.pdb
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\ObserverPattern\obj\Debug\netcoreapp3.1\ObserverPattern.csprojAssemblyReference.cache
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\ObserverPattern\obj\Debug\netcoreapp3.1\ObserverPattern.AssemblyInfoInputs.cache
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\ObserverPattern\obj\Debug\netcoreapp3.1\ObserverPattern.AssemblyInfo.cs
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\ObserverPattern\obj\Debug\netcoreapp3.1\ObserverPattern.csproj.CoreCompileInputs.cache
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\ObserverPattern\obj\Debug\netcoreapp3.1\ObserverPattern.dll
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\ObserverPattern\obj\Debug\netcoreapp3.1\ObserverPattern.pdb
+C:\Users\Rasa.Baniulyte\Desktop\Trainings\Classroom\trainings\C#\DesignPatterns\ObserverPattern\obj\Debug\netcoreapp3.1\ObserverPattern.genruntimeconfig.cache
